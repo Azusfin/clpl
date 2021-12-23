@@ -221,7 +221,6 @@ export function stringifyText(block: Types.TextBlock, state: StringifyState): vo
                             break
                         case "\v":
                             escaped = "\\v"
-
                     }
 
                     splittedTexts[line].push(escaped)
