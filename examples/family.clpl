@@ -1,0 +1,47 @@
+family-name = 'Rose'
+
+@country=1
+@area=153
+phone = 351_3511
+
+members >
+    @metadata=(
+        has-phone = yes
+        description = "The family father"
+    )
+    joe >
+        phone = 135_6426
+        introduction = "Hello i'm Joe\n\
+            Your dad"
+    <
+
+    @metadata=(
+        has-phone = yes
+        description = "The family mother"
+    )
+    rose >
+        phone = 335_5212
+        introduction = "Hello i'm Rose\n\
+            Your mom"
+    <
+
+    @metadata=(
+        has-phone = yes
+        description = "The family older sister"
+    )
+    hibiscus >
+        phone = 135_6245
+        introduction = "Hello i'm hibiscus\n\
+            Your older sister"
+    <
+
+    @metadata=(
+        has-phone = no
+        description = "The family little sister"
+    )
+    poppy >
+        phone = none
+        introduction = "Hello i'm poppy\n\
+            Your little sister"
+    <
+<

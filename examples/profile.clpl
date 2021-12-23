@@ -1,0 +1,35 @@
+# The user name
+name >
+    first-name = 'Andrew'
+    family-name = 'Pablo'
+<
+
+# The user phone number
+@country=1
+@area=415
+phone = 732_3156
+
+# The user jobs
+job = [
+    'Teacher'
+    'Driver'
+]
+
+# The user address
+address = (
+    country = 'USA'
+    state = 'California'
+    city = 'San Fransisco'
+)
+
+# The user first email
+email + (
+    id = 'andrew1email135'
+    domain = 'ymail.com'
+)
+
+# The user second email
+email + (
+    id = 'andrew2email531'
+    domain = 'gmail.com'
+)

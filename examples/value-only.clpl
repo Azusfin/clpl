@@ -1,0 +1,13 @@
+name = 'profile'
+data = [
+    (
+        name = 'Bob'
+        has-phone = no
+        phone = none
+    )
+    (
+        name = 'Joe'
+        has-phone = yes
+        phone = '+1 (351) 513-1356'
+    )
+]

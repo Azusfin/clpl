@@ -1,0 +1,54 @@
+@doc='The workflow name'
+name = 'Testing'
+
+@doc='Events of the workflow'
+on >
+    @doc='Event \'push\' on src dir'
+    push >
+        paths + 'src/**'
+    <
+<
+
+@doc="The workflow jobs \uD83D\uDCCB"
+@conditions=[
+    "${{ github.repository == 'Azusfin/clpl' }}"
+]
+jobs = []
+jobs + (
+    @doc='The job name'
+    name = 'Mocha'
+    runs-on = 'ubuntu-latest'
+
+    @doc='The steps within the job'
+    steps = [
+        (
+            name = 'Checkout Repository'
+            uses = 'actions/checkout@v2'
+        )
+        (
+            name = 'Install Node v16'
+            uses = 'actions/setup-node@v2'
+            with >
+                node-version = 16
+            <
+        )
+
+        @doc='Install the dependencies'
+        (
+            name = 'Install Dependencies'
+            run = 'npm ci --no-optional'
+        )
+
+        @doc='Compile the ts file to js'
+        (
+            name = 'Build Source'
+            run = 'npm run build'
+        )
+
+        @doc='Start the test'
+        (
+            name = 'Test with Mocha'
+            run = 'npm test'
+        )
+    ]
+)

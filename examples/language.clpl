@@ -1,0 +1,20 @@
+@doc='The language name'
+name >
+    abbreviation = 'CLPL'
+    long-name = 'Chamaelyn Key-Value Pair Language'
+<
+
+created >
+    by = 'Azusfin'
+
+    @doc='Created at 18/12/2021'
+    at >
+        date = 18
+        month = 12
+        year = 2021
+    <
+<
+
+@url='https://choosealicense.com/licenses/mit/'
+@doc='The license of the language'
+license = 'MIT'

@@ -1,0 +1,1 @@
+@doc='The user name' name = 'Bob' @doc='The user phone' @country=1 @area=451 phone = 135_5311 @doc='The user email' email > address = 'bobmail' domain = 'gmail.com' <
