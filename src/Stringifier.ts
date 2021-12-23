@@ -83,7 +83,7 @@ export function stringifyPair(pair: Types.Pair, state: StringifyState, key?: str
             key.startsWith("@") ||
             key.includes(" ")
         ) {
-            state.chars.push(`'${key}' = `)
+            state.chars.push(`'${key.split("'").join("\\'")}' = `)
         } else state.chars.push(`${key} = `)
     }
 
